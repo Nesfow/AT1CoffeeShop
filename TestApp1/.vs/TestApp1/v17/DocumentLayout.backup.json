@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Holmesglen\\Semester 5\\4. Web Programming\\Assignments\\Assignment 1\\C#Project\\a_team_coffee_shop\\TestApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{960702E3-BF04-480C-B4FA-206A799906B1}|TestApp1\\TestApp1.csproj|d:\\study\\holmesglen\\semester 5\\4. web programming\\assignments\\assignment 1\\c#project\\a_team_coffee_shop\\testapp1\\testapp1\\testapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{960702E3-BF04-480C-B4FA-206A799906B1}|TestApp1\\TestApp1.csproj|solutionrelative:testapp1\\testapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{960702E3-BF04-480C-B4FA-206A799906B1}|TestApp1\\TestApp1.csproj|d:\\study\\holmesglen\\semester 5\\4. web programming\\assignments\\assignment 1\\c#project\\a_team_coffee_shop\\testapp1\\testapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{960702E3-BF04-480C-B4FA-206A799906B1}|TestApp1\\TestApp1.csproj|solutionrelative:testapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestApp1",
+              "DocumentMoniker": "D:\\Study\\Holmesglen\\Semester 5\\4. Web Programming\\Assignments\\Assignment 1\\C#Project\\a_team_coffee_shop\\TestApp1\\TestApp1\\TestApp1.csproj",
+              "RelativeDocumentMoniker": "TestApp1\\TestApp1.csproj",
+              "ToolTip": "D:\\Study\\Holmesglen\\Semester 5\\4. Web Programming\\Assignments\\Assignment 1\\C#Project\\a_team_coffee_shop\\TestApp1\\TestApp1\\TestApp1.csproj",
+              "RelativeToolTip": "TestApp1\\TestApp1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-21T05:56:50.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\Holmesglen\\Semester 5\\4. Web Programming\\Assignments\\Assignment 1\\C#Project\\a_team_coffee_shop\\TestApp1\\TestApp1\\Program.cs",
+              "RelativeDocumentMoniker": "TestApp1\\Program.cs",
+              "ToolTip": "D:\\Study\\Holmesglen\\Semester 5\\4. Web Programming\\Assignments\\Assignment 1\\C#Project\\a_team_coffee_shop\\TestApp1\\TestApp1\\Program.cs",
+              "RelativeToolTip": "TestApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T05:56:35.995Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

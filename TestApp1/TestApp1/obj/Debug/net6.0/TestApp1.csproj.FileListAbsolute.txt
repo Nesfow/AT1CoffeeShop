@@ -1,0 +1,15 @@
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\bin\Debug\net6.0\TestApp1.exe
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\bin\Debug\net6.0\TestApp1.deps.json
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\bin\Debug\net6.0\TestApp1.runtimeconfig.json
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\bin\Debug\net6.0\TestApp1.dll
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\bin\Debug\net6.0\TestApp1.pdb
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.AssemblyInfoInputs.cache
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.AssemblyInfo.cs
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.csproj.CoreCompileInputs.cache
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.sourcelink.json
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.dll
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\refint\TestApp1.dll
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.pdb
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\TestApp1.genruntimeconfig.cache
+D:\Study\Holmesglen\Semester 5\4. Web Programming\Assignments\Assignment 1\C#Project\a_team_coffee_shop\TestApp1\TestApp1\obj\Debug\net6.0\ref\TestApp1.dll
