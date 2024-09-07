@@ -1,4 +1,10 @@
-﻿namespace AT1CoffeeShop.DAL
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AT1CoffeeShop.DAL
 {
     public class CoffeeShopRepository
     {
