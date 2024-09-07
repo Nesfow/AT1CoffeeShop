@@ -1,10 +1,12 @@
-﻿namespace AT1CoffeeShop
+﻿using AT1CoffeeShop.PL;
+namespace AT1CoffeeShop
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            PL_Manager.Run();
+
         }
     }
 }
