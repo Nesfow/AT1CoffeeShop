@@ -1,4 +1,4 @@
-﻿namespace AT1CoffeeShop.Models
+﻿namespace AT1CoffeeShop.Models.DBModels
 {
     public class Items
     {
