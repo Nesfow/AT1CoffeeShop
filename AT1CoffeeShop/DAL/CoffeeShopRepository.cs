@@ -29,8 +29,8 @@ namespace AT1CoffeeShop.DAL
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
-                string selectQuery = "SELECT Orders.OrderId, CustomerName, CoffeeName, CoffeePrice FROM Orders " +
+// TODO: add ItemQty to query
+                string selectQuery = "SELECT Orders.OrderId, CustomerName, CoffeeName, CoffeePrice, ItemQty FROM Orders " +
                                      "JOIN OrderItems ON Orders.OrderId = OrderItems.OrderId " +
                                      "JOIN Items ON Items.ItemId = OrderItems.ItemId " +
                                      "ORDER BY Orders.OrderId";
@@ -46,8 +46,8 @@ namespace AT1CoffeeShop.DAL
 
                             if (currentRowOrderId == rowOrderIdToCompare)
                             {
-                                orderToDisplay.CoffeeNames.Add(reader.GetString(2));
-                                orderToDisplay.TotalPrice += reader.GetDecimal(3);
+                                orderToDisplay.CoffeeNames.Add(Tuple.Create(reader.GetString(2), reader.GetInt32(4)));
+                                orderToDisplay.TotalPrice += reader.GetDecimal(3) * reader.GetInt32(4);
                             }
                             else
                             {
@@ -59,8 +59,8 @@ namespace AT1CoffeeShop.DAL
                                     OrderId = reader.GetInt32(0),
                                     CustomerName = reader.GetString(1)
                                 };
-                                orderToDisplay.CoffeeNames.Add(reader.GetString(2));
-                                orderToDisplay.TotalPrice += reader.GetDecimal(3);
+                                orderToDisplay.CoffeeNames.Add(Tuple.Create(reader.GetString(2), reader.GetInt32(4)));
+                                orderToDisplay.TotalPrice += reader.GetDecimal(3) * reader.GetInt32(4);
                             }
                         }
                         allOrdersToDisplay.AllOrdersToDisplay.Add(orderToDisplay);
