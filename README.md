@@ -1,2 +1,2 @@
-# a_team_coffee_shop
+# AT1CoffeeShop
 The A-Team, assignment 1 - Coffee Shop.
