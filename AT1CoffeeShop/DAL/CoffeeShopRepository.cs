@@ -1,6 +1,7 @@
-﻿using AT1CoffeeShop.Models.BusinessModels;
+using AT1CoffeeShop.Models.BusinessModels;
 using AT1CoffeeShop.Models.DBModels;
 using System.Data.SqlClient;
+
 
 namespace AT1CoffeeShop.DAL
 {
@@ -15,7 +16,7 @@ namespace AT1CoffeeShop.DAL
 
         public void CreateOrder()
         {
-            
+
         }
 
         public void ViewOrders()
@@ -71,12 +72,12 @@ namespace AT1CoffeeShop.DAL
 
         public void UpdateOrder()
         {
-           
+          
         }
 
         public void CancelOrder()
         {
-            
+
         }
     }
 }
