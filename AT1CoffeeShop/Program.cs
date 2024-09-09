@@ -1,4 +1,5 @@
 ﻿using AT1CoffeeShop.PL;
+
 namespace AT1CoffeeShop
 {
     internal class Program
@@ -6,7 +7,6 @@ namespace AT1CoffeeShop
         static void Main(string[] args)
         {
             PL_Manager.Run();
-
         }
     }
 }

@@ -14,23 +14,19 @@ namespace AT1CoffeeShop.BLL
         public void CreateOrder()
         {
             coffeeShopRepository.CreateOrder();
-
         }
         public void ViewOrders()
         {
             coffeeShopRepository.ViewOrders();
-
         }
 
         public void UpdateOrder()
         {
             coffeeShopRepository.UpdateOrder();
-
         }
         public void CancelOrder()
         {
             coffeeShopRepository.CancelOrder();
-
         }
     }
 }
