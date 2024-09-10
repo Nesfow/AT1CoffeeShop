@@ -98,9 +98,8 @@ namespace AT1CoffeeShop.DAL
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine("1. Change customer name");
                 Console.WriteLine("2. Add item to order");
-                Console.WriteLine("3. Edit order item");
-                Console.WriteLine("4. Remove order item");
-                Console.WriteLine("5. Go back");
+                Console.WriteLine("3. Remove order item");
+                Console.WriteLine("4. Go back");
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -180,9 +179,6 @@ namespace AT1CoffeeShop.DAL
                         //coffeeShopManager.UpdateOrder();
                         break;
                     case "4":
-                        //coffeeShopManager.CancelOrder();
-                        break;
-                    case "5":
                         exit = true;
                         break;
                     default:
