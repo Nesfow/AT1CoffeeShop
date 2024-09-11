@@ -2,6 +2,7 @@ using AT1CoffeeShop.BLL;
 using AT1CoffeeShop.Models.BusinessModels;
 using AT1CoffeeShop.Models.DBModels;
 using System.Data.SqlClient;
+using System.Reflection.PortableExecutable;
 using System.Xml.Linq;
 
 
@@ -89,7 +90,7 @@ namespace AT1CoffeeShop.DAL
 
         public void UpdateOrder()
         {
-            Console.WriteLine("Enter the Id of the order to update: \n");
+            Console.WriteLine("Enter the Id of the order to update:");
             int orderIdToUpdate = Convert.ToInt32(Console.ReadLine());
 
             bool exit = false;
@@ -114,7 +115,7 @@ namespace AT1CoffeeShop.DAL
                                 command.Parameters.AddWithValue("@OrderId", orderIdToUpdate);
                                 command.Parameters.AddWithValue("@NewCustomerName", newCustomerName);
                                 command.ExecuteNonQuery();
-                                Console.WriteLine("Customer name was updated.");
+                                Console.WriteLine("Customer name was updated. \n");
                             }
                         }
 
@@ -163,7 +164,53 @@ namespace AT1CoffeeShop.DAL
                                 command.ExecuteNonQuery();
                             }
 
-                            Console.WriteLine("Item added.");
+                            Console.WriteLine("Item added. \n");
+                        }
+
+                        Console.WriteLine("Anything else?");
+                        Console.WriteLine("1. Yes");
+                        Console.WriteLine("2. No");
+                        if (Console.ReadLine() == "2")
+                        {
+                            exit = true;
+                        }
+                        break;
+                    case "3":
+                        Console.WriteLine($"What item(s) would you like to remove from order? \n" +
+                            $" PLEASE NOTE: if you have separate items with the same name - they all will be removed.");
+
+                        string selectQuery2 = "SELECT OrderItems.ItemId, CoffeeName FROM OrderItems JOIN Items ON Items.ItemId = OrderItems.ItemId WHERE OrderId = @OrderId";
+                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        {
+                            connection.Open();
+
+                            using (SqlCommand command = new SqlCommand(selectQuery2, connection))
+                            {
+                                command.Parameters.AddWithValue("@OrderId", orderIdToUpdate);
+
+                                using (SqlDataReader reader = command.ExecuteReader())
+                                {
+                                    while (reader.Read())
+                                    {
+                                        Console.WriteLine($"Id: {reader.GetInt32(0)}, Coffee name: {reader.GetString(1)}");
+                                    }
+                                }
+                            }
+                        }
+
+                        string itemIdToRemove = Console.ReadLine();
+                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        {
+                            connection.Open();
+
+                            string deleteQuery = "DELETE FROM OrderItems WHERE OrderId = @OrderId AND ItemId = @ItemId";
+                            using (SqlCommand command = new SqlCommand(deleteQuery, connection))
+                            {
+                                command.Parameters.AddWithValue("@OrderId", orderIdToUpdate);
+                                command.Parameters.AddWithValue("@ItemId", itemIdToRemove);
+                                int rowsAffected = command.ExecuteNonQuery();
+                                Console.WriteLine("Item was removed successfully.");
+                            }
                         }
 
                         Console.WriteLine("Anything else?");
@@ -174,9 +221,6 @@ namespace AT1CoffeeShop.DAL
                             exit = true;
                         }
 
-                        break;
-                    case "3":
-                        //coffeeShopManager.UpdateOrder();
                         break;
                     case "4":
                         exit = true;
