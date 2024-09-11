@@ -294,9 +294,18 @@ namespace AT1CoffeeShop.DAL
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string deleteOrderQuery = "DELETE FROM Orders WHERE OrderId = @OrderId";
 
-                using (SqlCommand command = new SqlCommand(deleteOrderQuery, connection))
+                string deleteOrderQuery1 = "DELETE FROM OrderItems WHERE OrderId = @OrderId";
+
+                using (SqlCommand command = new SqlCommand(deleteOrderQuery1, connection))
+                {
+                    command.Parameters.AddWithValue("@OrderId", orderId);
+                    command.ExecuteNonQuery();
+                }
+
+
+                string deleteOrderQuery2 = "DELETE FROM Orders WHERE OrderId = @OrderId";
+                using (SqlCommand command = new SqlCommand(deleteOrderQuery2, connection))
                 {
                     command.Parameters.AddWithValue("@OrderId", orderId);
                     int rowsAffected = command.ExecuteNonQuery();
