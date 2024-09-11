@@ -32,9 +32,10 @@ namespace AT1CoffeeShop.DAL
                     int orderId = Convert.ToInt32(command.ExecuteScalar());
 
                     Console.WriteLine("Order created successfully. Order ID: " + orderId);
+                    Console.WriteLine();
 
-                    bool addMoreItems = true;
-                    while (addMoreItems)
+                    bool addMoreItems = false;
+                    while (!addMoreItems)
                     {
                         Console.WriteLine("What item would you like to add to the order: ");
 
@@ -69,8 +70,13 @@ namespace AT1CoffeeShop.DAL
                             itemCommand.ExecuteNonQuery();
                         }
 
-                        Console.WriteLine("Do you want to add more items to the order? (yes/no): ");
-                        addMoreItems = Console.ReadLine()?.ToLower() == "yes";
+                        Console.WriteLine("Anything else?");
+                        Console.WriteLine("1. Yes");
+                        Console.WriteLine("2. No");
+                        if (Console.ReadLine() == "2")
+                        {
+                            addMoreItems = true;
+                        }
                     }
                 }
             }
@@ -136,7 +142,6 @@ namespace AT1CoffeeShop.DAL
                 }
                 Console.WriteLine($"Total price: {order.TotalPrice}");
                 Console.WriteLine("......................");
-                Console.WriteLine();
             }
             Console.WriteLine();
         }
@@ -149,7 +154,7 @@ namespace AT1CoffeeShop.DAL
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("What would you like to do?");
+                Console.WriteLine("\nWhat would you like to do?");
                 Console.WriteLine("1. Change customer name");
                 Console.WriteLine("2. Add item to order");
                 Console.WriteLine("3. Remove order item");
