@@ -7,11 +7,11 @@ using System.Xml.Linq;
 
 namespace AT1CoffeeShop.DAL
 {
-    public class OrderRepository
+    public class CoffeeShopRepository
     {
         private readonly string connectionString;
 
-        public OrderRepository(string connectionString)
+        public CoffeeShopRepository(string connectionString)
         {
             this.connectionString = connectionString;
         }
