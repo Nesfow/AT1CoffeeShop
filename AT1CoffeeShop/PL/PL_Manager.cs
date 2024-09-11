@@ -8,11 +8,12 @@ namespace AT1CoffeeShop.PL
         static CoffeeShopManager coffeeShopManager = new CoffeeShopManager(connectionString);
         public static void Run()
         {
+            Console.WriteLine("Welcome to the Coffee Shop Manager Console!");
+            Console.WriteLine("----------------------------------------------");
+
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("Welcome to the Coffee Shop Manager Console!");
-                Console.WriteLine("----------------------------------------------");
                 Console.WriteLine("Please, select the function you would like to perform:");
                 Console.WriteLine("1. Create new order");
                 Console.WriteLine("2. View all current orders");
