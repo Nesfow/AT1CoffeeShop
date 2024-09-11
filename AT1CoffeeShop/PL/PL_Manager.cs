@@ -23,7 +23,7 @@ namespace AT1CoffeeShop.PL
                 Console.WriteLine("Enter your choice: ");
                 Console.WriteLine();
 
-                switch (Console.ReadLine())
+              switch (Console.ReadLine())
                 {
                     case "1":
                         coffeeShopManager.CreateOrder();
@@ -47,5 +47,4 @@ namespace AT1CoffeeShop.PL
             }
         }
     }
-
 }
