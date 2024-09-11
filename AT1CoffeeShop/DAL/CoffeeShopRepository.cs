@@ -7,11 +7,11 @@ using System.Xml.Linq;
 
 namespace AT1CoffeeShop.DAL
 {
-    public class OrderRepository
+    public class CoffeeShopRepository
     {
         private readonly string connectionString;
 
-        public OrderRepository(string connectionString)
+        public CoffeeShopRepository(string connectionString)
         {
             this.connectionString = connectionString;
         }
@@ -36,6 +36,23 @@ namespace AT1CoffeeShop.DAL
                     bool addMoreItems = true;
                     while (addMoreItems)
                     {
+                        Console.WriteLine("What item would you like to add to the order: ");
+
+                        // Dynamically checking items that possible to add.
+                        string selectQuery = "SELECT ItemId, CoffeeName FROM Items";
+                        using (SqlCommand command2 = new SqlCommand(selectQuery, connection))
+                        {
+                            using (SqlDataReader reader = command2.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    Console.WriteLine($"Id: {reader.GetInt32(0)}, Coffee name: {reader.GetString(1)}");
+                                }
+                            }
+                        }
+                    
+
+
                         Console.WriteLine("Enter item ID: ");
                         int itemId = Convert.ToInt32(Console.ReadLine());
 
