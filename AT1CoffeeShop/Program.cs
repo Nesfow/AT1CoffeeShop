@@ -5,7 +5,7 @@ namespace AT1CoffeeShop
     {
         static void Main(string[] args)
         {
-            PL_Manager.Run();
+            PL_CoffeeShop.Run();
 
         }
     }

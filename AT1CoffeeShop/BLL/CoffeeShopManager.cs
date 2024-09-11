@@ -1,36 +1,35 @@
 ﻿using AT1CoffeeShop.DAL;
+using System;
 
 namespace AT1CoffeeShop.BLL
 {
-    public class CoffeeShopManager
+    public class OrderManager
     {
-        private readonly CoffeeShopRepository coffeeShopRepository;
+        private readonly OrderRepository orderRepository;
 
-        public CoffeeShopManager(string connectionString)
+        public OrderManager(string connectionString)
         {
-            coffeeShopRepository = new CoffeeShopRepository(connectionString);
+            orderRepository = new OrderRepository(connectionString);
         }
 
         public void CreateOrder()
         {
-            coffeeShopRepository.CreateOrder();
-
+            orderRepository.CreateOrder();
         }
+
         public void ViewOrders()
         {
-            coffeeShopRepository.ViewOrders();
-
+            orderRepository.ViewOrders();
         }
 
         public void UpdateOrder()
         {
-            coffeeShopRepository.UpdateOrder();
-
+            orderRepository.UpdateOrder();
         }
+
         public void CancelOrder()
         {
-            coffeeShopRepository.CancelOrder();
-
+            orderRepository.CancelOrder();
         }
     }
 }

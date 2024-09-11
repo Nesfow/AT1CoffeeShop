@@ -1,46 +1,43 @@
 ﻿using AT1CoffeeShop.BLL;
+using System;
 
 namespace AT1CoffeeShop.PL
 {
-    public class PL_Manager
+    public class PL_CoffeeShop
     {
-        static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CoffeeShop;Integrated Security=True;";
-        static CoffeeShopManager coffeeShopManager = new CoffeeShopManager(connectionString);
         public static void Run()
         {
+            OrderManager orderManager = new(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CoffeeshopDB;Integrated Security=True;");
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("Welcome to the Coffee Shop Manager Console!");
-                Console.WriteLine("----------------------------------------------");
-                Console.WriteLine("Please, select the function you would like to perform:");
-                Console.WriteLine("1. Create new order");
-                Console.WriteLine("2. View all current orders");
-                Console.WriteLine("3. Update order");
-                Console.WriteLine("4. Cancel order");
+                Console.WriteLine("Choose an option:");
+                Console.WriteLine("1. Create Order");
+                Console.WriteLine("2. View Orders");
+                Console.WriteLine("3. Update Order");
+                Console.WriteLine("4. Cancel Order");
                 Console.WriteLine("5. Exit");
                 Console.WriteLine("Enter your choice: ");
-                Console.WriteLine();
 
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        coffeeShopManager.CreateOrder();
+                        orderManager.CreateOrder();
                         break;
                     case "2":
-                        coffeeShopManager.ViewOrders();
+                        orderManager.ViewOrders();
                         break;
                     case "3":
-                        coffeeShopManager.UpdateOrder();
+                        orderManager.UpdateOrder();
                         break;
                     case "4":
-                        coffeeShopManager.CancelOrder();
+                        orderManager.CancelOrder();
                         break;
                     case "5":
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine("I am sorry, but this option doesn't exist. Please try another value :)");
+                        Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
             }
