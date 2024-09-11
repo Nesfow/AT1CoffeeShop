@@ -1,5 +1,4 @@
 ﻿using AT1CoffeeShop.DAL;
-
 namespace AT1CoffeeShop.BLL
 {
     public class CoffeeShopManager
