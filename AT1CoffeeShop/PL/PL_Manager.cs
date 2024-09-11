@@ -14,6 +14,7 @@ namespace AT1CoffeeShop.PL
             bool exit = false;
             while (!exit)
             {
+                Console.WriteLine();
                 Console.WriteLine("Please, select the function you would like to perform:");
                 Console.WriteLine("1. Create new order");
                 Console.WriteLine("2. View all current orders");
