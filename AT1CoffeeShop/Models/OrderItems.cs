@@ -1,5 +1,6 @@
 ﻿namespace AT1CoffeeShop.Models
 {
+    // OrderItem class represents OrderItem in the database
     public class OrderItem
     {
         public int OrderId { get; set; }
