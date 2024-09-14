@@ -1,5 +1,7 @@
 ﻿namespace AT1CoffeeShop.Models.BusinessModels
 {
+    // This is a non-database class that represents business entity - an order;
+    // It is used to display order on screen
     public class OrderToDisplay
     {
         public int OrderId { get; set; }
