@@ -1,6 +1,5 @@
-﻿namespace AT1CoffeeShop.Models
+﻿namespace AT1CoffeeShop.Models.DBModels
 {
-    // Items class represents Items table in the database
     public class Items
     {
         public int ItemId { get; set; }
